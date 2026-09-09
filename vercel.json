@@ -2,10 +2,14 @@
   "version": 2,
   "builds": [
     { "src": "api/patch.js", "use": "@vercel/node" },
-    { "src": "public/*", "use": "@vercel/static" }
+    { "src": "public/**", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/api/patch", "dest": "/api/patch.js" },
+    { "src": "/api/health", "dest": "/api/patch.js" },
+    { "src": "/style.css", "dest": "/public/style.css" },
+    { "src": "/script.js", "dest": "/public/script.js" },
+    { "src": "/", "dest": "/public/index.html" },
     { "src": "/(.*)", "dest": "/public/index.html" }
   ]
 }
