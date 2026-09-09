@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSLBypa55 – Hacker Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- হেডার -->
+        <div class="header">
+            <h1><span>SSL</span>Bypa55</h1>
+            <div class="credit">👤 Humayun Shariar Himu</div>
+        </div>
+
+        <!-- ড্রপ জোন -->
+        <div class="drop-zone" id="dropZone">
+            <p>📁 Drag & drop your APK here</p>
+            <p style="font-size:14px; color:#88a8b8;">or click to browse</p>
+            <div class="file-name" id="fileName">No file selected</div>
+            <input type="file" id="fileInput" accept=".apk" style="display:none;">
+        </div>
+
+        <!-- অপশন -->
+        <div class="options">
+            <label>
+                <input type="checkbox" id="sslBypass" checked> SSL Pinning Bypass
+            </label>
+            <label>
+                <input type="checkbox" id="vpnBypass" checked> VPN Detection Bypass
+            </label>
+        </div>
+
+        <!-- অ্যাকশন বাটন -->
+        <div style="display:flex; gap:15px; flex-wrap:wrap; margin:20px 0;">
+            <button class="btn" id="patchBtn">⚡ Start Patching</button>
+            <button class="btn btn-danger" id="resetBtn">✖ Reset</button>
+        </div>
+
+        <!-- প্রোগ্রেস বার -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar" style="width:0%"></div>
+        </div>
+
+        <!-- লগ বক্স -->
+        <div class="log-box" id="logBox">
+            > Ready to hack...<br>
+            > Upload an APK and hit Start.
+        </div>
+
+        <!-- ডাউনলোড (লুকানো) -->
+        <div id="downloadSection" style="display:none; margin-top:20px; text-align:center;">
+            <a class="btn" id="downloadBtn" href="#" download="patched.apk">⬇ Download Patched APK</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
